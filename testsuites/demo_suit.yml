@@ -1,0 +1,7 @@
+config:
+    name: create users with uid
+testcases:
+    demo测试:
+        testcase: testcases/demo.yml
+        parameters:
+            name-isexetype-method : ${P(testdata/data.csv)}

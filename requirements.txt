@@ -1,0 +1,14 @@
+certifi==2019.3.9
+chardet==3.0.4
+colorama==0.4.1
+colorlog==4.0.2
+filetype==1.0.5
+har2case==0.2.0
+HttpRunner==2.1.2
+idna==2.8
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+PyYAML==5.1
+requests==2.22.0
+requests-toolbelt==0.9.1
+urllib3==1.25.2

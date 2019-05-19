@@ -1,0 +1,24 @@
+- config:
+    name: 测试
+    base_url: https://tcc.taobao.com/
+    variables :
+        names: silence
+- test:
+    name: 接口
+    request:
+        url : cc/json/mobile_tel_segment.htm
+        params : {'tel':13381020417}
+        method : $method
+    validate:
+        - eq : [status_code,200]
+    output:
+      test: $isexetype
+#- test:
+#    name: demo2
+#    skip:
+#    request:
+#        url : cc/json/mobile_tel_segment.htm
+#        params : {'tel':13381020417}
+#        method : GET
+#    validate:
+#        - data : [content,"__GetZoneResult_ = { mts:'1338102', province:'北京', catName:'中国电信', telString:'13381020417', areaVid:'29400', ispVid:'138238560', carrier:'北京电信' }"]
